@@ -51,4 +51,4 @@ Error generating stack: `+o.message+`
     #root{
         margin:0 auto;
     }
- `;function xm(){return en.jsxs(en.Fragment,{children:[en.jsx(_m,{}),en.jsx("h1",{children:"Hello"})]})}Ho.createRoot(document.getElementById("root")).render(en.jsx(et.StrictMode,{children:en.jsx(xm,{})}));
+ `;function xm(){return en.jsxs(en.Fragment,{children:[en.jsx(_m,{}),en.jsx("h1",{children:"Hello"})]})}const Pm=Ho.createRoot(document.getElementById("root"));Pm.render(en.jsx(et.StrictMode,{children:en.jsx(xm,{})}));
