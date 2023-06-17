@@ -1,5 +1,5 @@
 import { GlobalStyles } from "./assets/styles";
-import { Switch } from "./components";
+import { NavBar, Switch } from "./components";
 import { ThemeContextProvider } from "./context";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
         <GlobalStyles />
         <h1>Hello</h1>
         <Switch />
+        <NavBar />
       </ThemeContextProvider>
     </>
   );
