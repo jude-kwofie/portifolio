@@ -1,10 +1,15 @@
 import { GlobalStyles } from "./assets/styles";
+import { Switch } from "./components";
+import { ThemeContextProvider } from "./context";
 
 function App() {
   return (
     <>
-      <GlobalStyles />
-      <h1>Hello</h1>
+      <ThemeContextProvider>
+        <GlobalStyles />
+        <h1>Hello</h1>
+        <Switch />
+      </ThemeContextProvider>
     </>
   );
 }

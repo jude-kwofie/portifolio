@@ -8,8 +8,13 @@ export default createGlobalStyle`
         outline:0;
         box-sizing:border-box;
         font-family: 'Open Sans', sans-serif; 
+        
     }
     #root{
         margin:0 auto;
+    }
+    body{
+        background-color: ${(props) => props.theme.backgroundColor};
+        color: ${(props) => props.theme.primaryColor};
     }
  `;
