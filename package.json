@@ -1,14 +1,17 @@
 {
-  "name": "g",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://jude-kwofie.github.io/portfolio",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.4",
@@ -26,6 +29,7 @@
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.8",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
