@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components";
 // These styles ensure that there is no margin or padding on the page, except in places where they are explicitly stated.
 
 export default createGlobalStyle`
-  @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
 
     *{
         margin: 0;
@@ -17,7 +16,7 @@ export default createGlobalStyle`
         background-color: ${(props) => props.theme.bodyColor};
         color: ${(props) => props.theme.textColor};
         font-family: 'Roboto', sans-serif;
-
+          margin: auto 5%;
     }
       h1, h2, h3, h4, h5, h6 {
         font-family: 'Lora', serif;
