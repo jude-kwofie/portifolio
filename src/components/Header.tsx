@@ -10,7 +10,9 @@ export type MenuTogglerType = {
 
 const MenuToggler = ({ toggle, istoggled }: MenuTogglerType) => {
   return (
-    <button onClick={toggle}>{istoggled ? <Close /> : <MenuOpen />}</button>
+    <button onClick={toggle} className="menu-toggler">
+      {istoggled ? <Close /> : <MenuOpen />}
+    </button>
   );
 };
 

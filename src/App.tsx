@@ -7,8 +7,6 @@ function App() {
     <>
       <ThemeContextProvider>
         <GlobalStyles />
-        <h1>Hello</h1>
-        <Switch />
         <Header />
       </ThemeContextProvider>
     </>

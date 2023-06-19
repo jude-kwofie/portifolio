@@ -16,7 +16,6 @@ export default createGlobalStyle`
         background-color: ${(props) => props.theme.bodyColor};
         color: ${(props) => props.theme.textColor};
         font-family: 'Roboto', sans-serif;
-          margin: auto 5%;
     }
       h1, h2, h3, h4, h5, h6 {
         font-family: 'Lora', serif;

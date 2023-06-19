@@ -26,4 +26,22 @@ export const NavBarStyles = styled.nav<NavBarProps>`
     flex-direction: column;
     align-items: center;
   }
+
+  @media (min-width: 600px) {
+    justify-self: end;
+    margin: 0;
+    .menu {
+      display: flex;
+      position: unset;
+      bottom: unset;
+      left: unset;
+      right: unset;
+      margin: unset;
+      padding: unset;
+      border-radius: 0;
+    }
+    .nav__icon {
+      display: none;
+    }
+  }
 `;
