@@ -1,5 +1,6 @@
 import React from "react";
 import { useTheme } from "../context";
+import { TransparentButton } from "./common";
 
 export const Switch: React.FC = () => {
   const { toggleTheme } = useTheme();
@@ -7,5 +8,5 @@ export const Switch: React.FC = () => {
     toggleTheme();
   };
 
-  return <button onClick={handleClick}>hello</button>;
+  return <TransparentButton onClick={handleClick}>hello</TransparentButton>;
 };

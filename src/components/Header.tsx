@@ -2,6 +2,7 @@ import { NavBar, Switch } from "."; // Update the correct import path
 import { HeaderStyles } from "../assets/styles";
 import { MenuOpen, Close } from "@material-ui/icons";
 import { useToggle } from "../hooks";
+import { TransparentButton } from "./common";
 
 export type MenuTogglerType = {
   istoggled: boolean;
