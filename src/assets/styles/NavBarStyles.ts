@@ -30,6 +30,10 @@ export const NavBarStyles = styled.nav<NavBarProps>`
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: hsl(207, 4%, 56%);
+  }
+  .nav__link:hover {
+    color: ${(props) => props.theme.titleColor};
   }
 
   @media (min-width: 600px) {

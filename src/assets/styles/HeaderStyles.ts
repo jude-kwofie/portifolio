@@ -18,6 +18,7 @@ export const HeaderStyles = styled.header`
   .logo {
     font-family: "Lora", serif;
     font-weight: 500;
+    color: hsl(207, 4%, 56%);
   }
   @media (min-width: 600px) {
     position: unset;
