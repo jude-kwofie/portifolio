@@ -6,14 +6,18 @@ import { TransparentButton } from "./common";
 
 export type MenuTogglerType = {
   istoggled: boolean;
-  toggle?: () => void;
+  toggle: () => void;
 };
 
-const MenuToggler = ({ toggle, istoggled }: MenuTogglerType) => {
+export const MenuToggler = ({ toggle, istoggled }: MenuTogglerType) => {
+  const handleClick = () => {
+    toggle();
+  };
+
   return (
-    <button onClick={toggle} className="menu-toggler">
+    <TransparentButton onClick={handleClick}>
       {istoggled ? <Close /> : <MenuOpen />}
-    </button>
+    </TransparentButton>
   );
 };
 
@@ -23,9 +27,9 @@ export const Header = (): JSX.Element => {
   return (
     <HeaderStyles role="header">
       <a href="#home" className="logo">
-        <span>Jude</span>
+        Jude
       </a>
-      <NavBar istoggled={isToggled} />
+      <NavBar istoggled={isToggled} toggle={toggle} />
       <Switch />
       <MenuToggler istoggled={isToggled} toggle={toggle} />
     </HeaderStyles>

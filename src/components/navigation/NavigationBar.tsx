@@ -1,11 +1,31 @@
+import { Close } from "@mui/icons-material";
 import { NavBarStyles } from "../../assets/styles";
+import { MenuToggler } from "../Header";
+import { TransparentButton } from "../common";
 import { NavBarItem, navBarList } from "./navbarList";
 
 type NavBarProps = {
   istoggled: boolean;
+  toggle: () => void;
 };
 
-export const NavBar = ({ istoggled }: NavBarProps) => {
+export type MenuCloseButtonProp = {
+  toggle: () => void;
+};
+
+export const MenuCloseButton = ({ toggle }: MenuCloseButtonProp) => {
+  const handleClick = () => {
+    toggle();
+  };
+
+  return (
+    <TransparentButton onClick={handleClick}>
+      <Close />
+    </TransparentButton>
+  );
+};
+
+export const NavBar = ({ istoggled, toggle }: NavBarProps) => {
   return (
     <NavBarStyles role="navigation" istoggled={istoggled.toString()}>
       <ul className="menu">
@@ -17,6 +37,7 @@ export const NavBar = ({ istoggled }: NavBarProps) => {
             </a>
           </li>
         ))}
+        <MenuCloseButton toggle={toggle} />
       </ul>
     </NavBarStyles>
   );

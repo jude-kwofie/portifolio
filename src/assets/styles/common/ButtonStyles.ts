@@ -22,4 +22,7 @@ export const TransparentButtonStyled = styled.button`
   &:hover {
     opacity: 0.8;
   }
+  .mode {
+    color: ${(props) => props.theme.textColor};
+  }
 `;
