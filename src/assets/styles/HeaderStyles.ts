@@ -12,7 +12,9 @@ export const HeaderStyles = styled.header`
   align-items: center;
   padding: 1rem;
   gap: 1rem;
-
+  button:last-of-type {
+    color: ${(props) => props.theme.textColor};
+  }
   .logo {
     font-family: "Lora", serif;
     font-weight: 500;
