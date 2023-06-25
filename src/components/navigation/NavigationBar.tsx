@@ -1,6 +1,5 @@
 import { Close } from "@mui/icons-material";
 import { NavBarStyles } from "../../assets/styles";
-import { MenuToggler } from "../Header";
 import { TransparentButton } from "../common";
 import { NavBarItem, navBarList } from "./navbarList";
 
