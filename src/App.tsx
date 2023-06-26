@@ -1,6 +1,7 @@
 import { GlobalStyles } from "./assets/styles";
-import { Header, Switch } from "./components";
+import { Header } from "./components";
 import { ThemeContextProvider } from "./context";
+import { Home } from "./pages";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <ThemeContextProvider>
         <GlobalStyles />
         <Header />
+        <Home />
       </ThemeContextProvider>
     </>
   );
